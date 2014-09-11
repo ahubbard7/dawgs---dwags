@@ -31,8 +31,12 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bForce\b/g, "Horse");
-	v = v.replace(/\bforce\b/g, "horse");
+	v = v.replace(/\bDawgs\b/g, "dwags");
+	v = v.replace(/\bdawgs\b/g, "dwags");
+	v = v.replace(/\bbulldogs\b/g, "bulldwags");
+	v = v.replace(/\bBulldogs\b/g, "BullDwags");
+	v = v.replace(/\bUniversity of Georgia\b/g, "U[sic]GA");
+		v = v.replace(/\bUniversity of Georgia\b/g, "U[sic]GA");
 	
 	textNode.nodeValue = v;
 }
